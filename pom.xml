@@ -26,6 +26,12 @@
 			<version>${junit.version}</version>
 		</dependency>
 
+                 <dependency> 
+                    <groupId>com.google.guava</groupId>
+                     <artifactId>guava</artifactId>
+                     <version>16.0.1</version>
+                 </dependency>
+
 		<!-- Spring Core -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -71,12 +77,50 @@
 		</dependency>
 
 	</dependencies>
+	
 
 	<build>
 		<finalName>CounterWebApp</finalName>
+	
 
 		<plugins>
 		    <!-- Eclipse project -->
+
+
+                    <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>2.4</version>
+            <configuration>
+                <archive>
+                    <index>true</index>
+                    <manifest>
+                        <mainClass>your.package.yourprogram.YourMainClass</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
+		
+		
+		 <plugin>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <version>1.7</version>
+            <executions>
+                <execution>
+                    <phase>install</phase>
+                    <configuration>
+                          <target>
+                              <copy  file="${project.build.directory}/CounterWebApp.war" todir="D:/tomcatstuff/webapps"/>
+                          </target>
+                    </configuration>
+                    <goals>
+                         <goal>run</goal>
+                    </goals>
+                </execution>
+            </executions>
+         </plugin>
+
+                
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-eclipse-plugin</artifactId>
@@ -89,6 +133,13 @@
 					<wtpversion>2.0</wtpversion>
 				</configuration>
 			</plugin>
+			
+			<plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-war-plugin</artifactId>
+               <version>3.2.2</version>
+                
+           </plugin>
 			
 			<!-- Set JDK Compiler Level -->
 			<plugin>
