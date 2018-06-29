@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy file="D:\projects-java-local\Maven-WebProject-CounterWebApp\CounterWebApp\target/CounterWebApp.war" todir="D:/tomcatstuff/webapps"/>
+</target>
+</project>
