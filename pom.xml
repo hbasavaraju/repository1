@@ -131,7 +131,7 @@
                     <phase>install</phase>
                     <configuration>
                           <target>
-                              <copy  file="${project.build.directory}/CounterWebApp.war" todir="D:/tomcatstuff/webapps"/>
+                              <copy  file="${project.build.directory}/CounterWebApp.war" todir="D:/Tomcat/apache-tomcat-7.0.85-windows-x86/apache-tomcat-7.0.85/webapps"/>
                           </target>
                     </configuration>
                     <goals>
