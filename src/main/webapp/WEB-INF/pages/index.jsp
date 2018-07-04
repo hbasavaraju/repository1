@@ -17,11 +17,7 @@
 			<td>Password :</td>
 			<td><input name="password"/></td>
 		</tr>
-		<tr>
-			<td>Gender :</td>
-			<td><input type="radio" value="M" label="M" /> 
-				<input type="radio" value="F" label="F" /></td>
-		</tr>
+		
 		<tr>
 			<td>Country :</td>
 			<td><select path="country">
@@ -37,15 +33,15 @@
 		</tr>
 		<tr>
 			<td>Community :</td>
-			<td><input type="checkbox" value="Spring"
-				label="Spring" /> <input type="checkbox" value="Hibernate"
-				label="Hibernate" /> <input type="checkbox" value="Struts"
+			<td><label name="Spring"/><input type="checkbox" value="Spring"
+				label="Spring" /> <label name="Hibernate"/><input type="checkbox" value="Hibernate"
+				label="Hibernate" /> <label name="Struts"/><input type="checkbox" value="Struts"
 				label="Struts" /></td>
 		</tr>
 		<tr>
 			<td></td>
-			<td><input type="checkbox" path="mailingList"
-				label="Would you like to join our mailinglist?" /></td>
+			<td><label name="Would you like to join our mailinglist?"/><input type="checkbox" path="mailingList"
+				 /></td>
 		</tr>
 		<tr>
 			<td colspan="2"><input type="submit"></td>
