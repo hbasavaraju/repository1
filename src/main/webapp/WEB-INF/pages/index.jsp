@@ -19,7 +19,7 @@
 		</tr>
 		<tr>
 			<td><input type="radio" name="gender" value="male" checked> Male<br>
-                          <input type="radio" name="gender" value="female"> </td>
+                          <input type="radio" name="gender" value="female">Female </td>
 		</tr>	
 		
 		<tr>
