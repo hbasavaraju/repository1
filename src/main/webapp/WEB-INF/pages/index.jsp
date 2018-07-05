@@ -17,14 +17,18 @@
 			<td>Password :</td>
 			<td><input name="password"/></td>
 		</tr>
+		<tr>
+			<td><input type="radio" name="gender" value="male" checked> Male<br>
+                          <input type="radio" name="gender" value="female"> </td>
+		</tr>	
 		
 		<tr>
 			<td>Country :</td>
 			<td><select path="country">
-				<option value="0" label="Select" />
-				<option value="1" label="India" />
-				<option value="2" label="USA" />
-				<option value="3" label="UK" />
+				<option value="0" label="Select" >Select </option>
+				<option value="1" label="India" >India </option>
+				<option value="2" label="USA" >USA </option>
+				<option value="3" label="UK" >UK </option>
 			</select></td>
 		</tr>
 		<tr>
