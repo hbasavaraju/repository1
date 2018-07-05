@@ -37,7 +37,7 @@
 		</tr>
 		<tr>
 			<td>Community :</td>
-			<td>Spring><input type="checkbox" value="Spring"
+			<td>Spring<input type="checkbox" value="Spring"
 				label="Spring" /> Hibernate<input type="checkbox" value="Hibernate"
 				label="Hibernate" /> Struts<input type="checkbox" value="Struts"
 				label="Struts" /></td>
