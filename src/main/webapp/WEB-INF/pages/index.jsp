@@ -44,7 +44,7 @@
 		</tr>
 		<tr>
 			<td></td>
-			<td><label name="Would you like to join our mailinglist?"/><input type="checkbox" path="mailingList"
+			<td>Would you like to join our mailinglist<input type="checkbox" path="mailingList"
 				 /></td>
 		</tr>
 		<tr>
